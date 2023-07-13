@@ -10,9 +10,9 @@ from umpire import Umpire
 player1 = Player("M S Dhoni", 0.8, 0.2, 0.99, 0.8, 0.9)
 player2 = Player("Virat", 0.7, 0.3, 0.95, 0.7, 0.8)
 player3 = Player("Player 3", 0.6, 0.4, 0.9, 0.6, 0.7)
-player4 = Player("Player 4", 0.8, 0.2, 0.98, 0.7, 0.9)
-player5 = Player("Player 4", 0.8, 0.2, 0.98, 0.7, 0.9)
-player6 = Player("Player 4", 0.8, 0.2, 0.98, 0.7, 0.9)
+player4 = Player("Player 4", 0.9, 0.2, 0.96, 0.6, 0.9)
+player5 = Player("Player 5", 0.8, 0.3, 0.94, 0.7, 0.6)
+player6 = Player("Player 6", 0.8, 0.2, 0.92, 0.8, 0.8)
 
 # Create team objects
 team1 = Team("Team 1", [player1, player2, player6])
