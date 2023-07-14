@@ -39,12 +39,5 @@ class Team:
         bowler = random.choice(players)
         return bowler
 
-    def choose_random(self, players):
-        if len(players) > 1:
-            return random.choice(self.players)
-        else:
-            self.current_bowler = self.players[0]
-            return self.current_bowler
-
     def add_score(self, runs):
         self.score += runs

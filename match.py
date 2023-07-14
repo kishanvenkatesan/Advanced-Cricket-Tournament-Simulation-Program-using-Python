@@ -58,8 +58,7 @@ class Match:
             bowler = bowling_team.choose_bowler(bowling_team.players, self.previous_bowler)
             if bowler is None:
                 # bowler = bowling_team.choose_random(bowling_team.players)
-                print(len(batting_team.players))
-                bowler = random.choice(bowling_team.players)
+                return
 
             batsman = batting_team.batting_order[0]
             if bowler != batsman:  # and not (batsman == bowler):
