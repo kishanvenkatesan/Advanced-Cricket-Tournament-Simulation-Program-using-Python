@@ -40,7 +40,6 @@ cricket-tournament/
   ├── commentator.py
   ├── player.py
   ├── README.md
-  └── requirements.txt
 ```
 
 - `main.py`: The main entry point of the program that starts the cricket tournament simulation.
