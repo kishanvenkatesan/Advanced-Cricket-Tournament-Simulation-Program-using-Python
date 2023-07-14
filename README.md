@@ -39,7 +39,7 @@ cricket-tournament/
   ├── umpire.py
   ├── commentator.py
   ├── player.py
-  ├── README.md
+  └──  README.md
 ```
 
 - `main.py`: The main entry point of the program that starts the cricket tournament simulation.
