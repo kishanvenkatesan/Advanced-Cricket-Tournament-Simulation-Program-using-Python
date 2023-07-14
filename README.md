@@ -16,12 +16,6 @@ This project is a cricket tournament simulation program developed in Python. It 
    cd Advanced-Cricket-Tournament-Simulation-Program-using-Python
    ```
 
-3. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## Usage
 
 1. Run the main.py file to start the cricket tournament simulation:
