@@ -7,13 +7,13 @@ This project is a cricket tournament simulation program developed in Python. It 
 1. Clone the project repository:
 
    ```bash
-   git clone https://github.com/your-username/cricket-tournament.git
+   git clone https://github.com/kishanvenkatesan/Advanced-Cricket-Tournament-Simulation-Program-using-Python
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd cricket-tournament
+   cd Advanced-Cricket-Tournament-Simulation-Program-using-Python
    ```
 
 3. Install the required dependencies:
@@ -68,7 +68,3 @@ Contributions to the project are welcome! If you have any ideas, improvements, o
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
-
-Feel free to update and customize the README file based on your project's specific details and requirements.
-
-If you have any further questions or need additional assistance, feel free to ask!
