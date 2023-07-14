@@ -80,7 +80,7 @@ class Match:
 
     def simulate_ball(self, batsman, bowler):
         # Simulate a ball and update match stats
-        outcome = self.umpire.predict_outcome(batsman, bowler)
+        outcome = self.umpire.predict_outcome(batsman, bowler, self.current_bowling_team.players)
         # runs_scored = random.choice([0, 1, 2, 3, 4, 6])
         # Update match statistics based on the outcome
         if outcome == 'wicket':
@@ -94,10 +94,26 @@ class Match:
             else:
                 batting_team.batting_order.pop(0)
                 # Remove batsman from the field
-        elif outcome == 'boundary':
+        elif outcome == 'Scored one run':
+            self.umpire.update_score(1)
+            batting_team = self.current_batting_team
+            batting_team.add_score(1)  # Add 1 to the batting team's score
+        elif outcome == 'Scored two runs':
+            self.umpire.update_score(2)
+            batting_team = self.current_batting_team
+            batting_team.add_score(2)  # Add 2 to the batting team's score
+        elif outcome == 'Scored three runs':
+            self.umpire.update_score(3)
+            batting_team = self.current_batting_team
+            batting_team.add_score(3)  # Add 3 to the batting team's score
+        elif outcome == 'It is a beautiful boundary!!':
             self.umpire.update_score(4)
             batting_team = self.current_batting_team
             batting_team.add_score(4)  # Add 4 to the batting team's score
+        elif outcome == 'It is a spectacular six':
+            self.umpire.update_score(6)
+            batting_team = self.current_batting_team
+            batting_team.add_score(6)  # Add 6 to the batting team's score
         # else
 
         # Generate commentary based on the match stats and ongoing game events
@@ -128,7 +144,7 @@ class Match:
         print("\nMatch Summary:")
         print(f"Team 1 Score: {self.team1.score}")
         print(f"Team 2 Score: {self.team2.score}")
-        print(f"Overs Played: {self.umpire.get_overs()}")
+        print(f"Total Overs Played by both teams: {self.umpire.get_overs()}")
 
     def display_winner(self):
         # Determine and display the winner based on the match statistics
